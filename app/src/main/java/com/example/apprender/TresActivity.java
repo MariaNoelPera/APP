@@ -7,15 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class TresActivity extends AppCompatActivity {
-Button bnuevo;
-Button volver2;
+    Button volver2;
+    Button estudiante;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tres);
-        volver2 = (Button) findViewById(R.id.volver2);
+
+        volver2 = findViewById(R.id.volver2);
+        estudiante = findViewById(R.id.button6);
         volver2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,5 +28,20 @@ Button volver2;
 
             }
         });
+
+        estudiante.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pantalla4 = new Intent(TresActivity.this, CuatroActivity.class);
+                startActivity(pantalla4);
+                finish();
+
+            }
+        });
+
+
+
+
     }
+
 }
