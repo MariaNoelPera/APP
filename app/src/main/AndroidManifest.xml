@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CuatroActivity"></activity>
+        <activity android:name=".Cuatro"></activity>
+        <activity android:name=".CincoActivity" />
+        <activity android:name=".SeisActivity" />
         <activity android:name=".TresActivity" />
         <activity android:name=".cero" />
         <activity android:name=".Dos" />

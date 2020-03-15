@@ -32,7 +32,7 @@ public class TresActivity extends AppCompatActivity {
         estudiante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pantalla4 = new Intent(TresActivity.this, CuatroActivity.class);
+                Intent pantalla4 = new Intent(TresActivity.this, Cuatro.class);
                 startActivity(pantalla4);
                 finish();
 
