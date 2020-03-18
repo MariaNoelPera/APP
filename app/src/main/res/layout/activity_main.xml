@@ -14,7 +14,7 @@
         android:layout_height="60dp"
         android:layout_marginBottom="40dp"
         android:background="#003366FF"
-        android:text="INICIAR SESIÓN"
+        android:text="@string/iniciar_sesi_n"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -13,12 +13,61 @@
         tools:context=".Dos">
 
         <Button
+            android:id="@+id/button19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#02FAF5F5"
+            android:text="INSTITUCION"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/salir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button18"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="#02FAF5F5"
+            android:text="UBICACION"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/salir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+        <Button
             android:id="@+id/button10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="140dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="164dp"
             android:backgroundTint="#02FAF5F5"
-            android:text="Todos los Cursos"
+            android:text="RECIENTES"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/salir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="228dp"
+            android:backgroundTint="#02FAF5F5"
+            android:text="TODOS"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/salir"
@@ -27,46 +76,31 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/button9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="208dp"
-            android:backgroundTint="#02FAF5F5"
-            android:text="Ingresados Recientemente"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/salir"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
             android:id="@+id/button8"
-            android:layout_width="94dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="119dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="64dp"
             android:layout_marginEnd="16dp"
             android:backgroundTint="#023366FF"
             android:text="FILTRAR"
             android:textColor="#FFFFFF"
-            android:textSize="10sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.707"
+            app:layout_constraintHorizontal_bias="0.148"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="94dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
             android:backgroundTint="#023366FF"
             android:text="MI PERFIL"
             android:textColor="#FFFFFF"
-            android:textSize="10sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.707"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -74,15 +108,17 @@
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="80dp"
             android:backgroundTint="#02FAF5F5"
-            android:text="Ver por Ubicación"
+            android:text="UBICACION"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/salir"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button10" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -111,8 +147,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#C63366FF"
-            android:text="SALIR"
+            android:text="Volver"
             android:textColor="#FFFFFF"
+            android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.95"
@@ -124,26 +161,26 @@
             android:id="@+id/searchView"
             android:layout_width="178dp"
             android:layout_height="46dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
             android:background="#00FFFFFF"
             android:tooltipText="BUSCADOR"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            tools:layout_editor_absoluteX="37dp" />
+            app:layout_constraintStart_toEndOf="@+id/button8"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="200dp"
             android:layout_height="40dp"
-            android:layout_marginTop="20dp"
             android:text="CURSOS"
-            android:textColor="#E1030D87"
+            android:textColor="#1A237E"
             android:textDirection="locale"
             android:textSize="24sp"
             android:textStyle="bold|italic"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.715"
+            app:layout_constraintHorizontal_bias="0.075"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

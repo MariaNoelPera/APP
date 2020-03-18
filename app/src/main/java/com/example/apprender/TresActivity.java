@@ -11,6 +11,8 @@ import android.widget.Button;
 public class TresActivity extends AppCompatActivity {
     Button volver2;
     Button estudiante;
+    Button institucion;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,7 @@ public class TresActivity extends AppCompatActivity {
 
         volver2 = findViewById(R.id.volver2);
         estudiante = findViewById(R.id.button6);
+        institucion = findViewById(R.id.button7);
         volver2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,6 +39,15 @@ public class TresActivity extends AppCompatActivity {
                 startActivity(pantalla4);
                 finish();
 
+            }
+        });
+
+        institucion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pantinstit= new Intent(TresActivity.this, SieteActivity.class);
+                startActivity(pantinstit);
+                finish();
             }
         });
 
